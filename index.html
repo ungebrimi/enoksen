@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Enoksen Bygg</title>
+</head>
+<body>
+    <header>
+        <nav class="primary__navigation split">
+            <img src="./logo_white_background.jpg" class="logo" alt="">
+            <ul class="primary__navigation-ul-desktop fs-600 split uppercase">
+                <li class="primary__navigation-li"><a href="#about" class="resetlink">om oss</a></li>
+                <li class="primary__navigation-li"><a href="#services" class="resetlink">tjenester</a></li>
+                <li class="primary__navigation-li"><a href="#contact" class="resetlink">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="services container split">
+            <div class="services__pitch">
+                <h2 class="uppercase fs-800 underline">vi bryr oss</h2>
+                <p class="fs-600">Vi er der for det store og de små prosjektene til ditt hus! ta kontakt idag for en hyggelig samtale.</p>
+            </div>
+            <div class="services__contact">
+                <p class="fs-600 uppercase">Ta Kontakt</p>
+                <a href="" class="services__contact-btn"><a href="tel:+4798422893"></a>+47-98422893</a>
+            </div>
+        </section>
+        <section class="about flow container" id="about">
+            <h1 class="about__title spacer">Hvordan vi kan hjelpe deg!</h1>
+            <div class="about__flex split">
+                <ul class="about__list">
+                    <li class="about__list-li fs-600"><i class="fas fa-hammer icon"></i>NYBYGG</li>
+                    <li class="about__list-li fs-600"><i class="fas fa-house-damage icon"></i>RESTAURERING</li>
+                    <li class="about__list-li fs-600"><i class="fas fa-hard-hat icon"></i>TILBYGG</li>
+                    <li class="about__list-li fs-600"><i class="fas fa-toolbox icon"></i>TOTALRENOVERING</li>
+                </ul>
+                <p class="about__flex-info">
+                    Enoksen Bygg tar på seg alle oppdrag innen nybygg, tilbygg, restaurering og totalrenovering. vi holder til i risør men tar og jobber utenfor lokalområdet. med fokus på kvalitet i arbeid og gode kunderelasjoner satser vi på og få til det du ønsker til hjemmet
+                </p>
+            </div>
+        </section>
+        <section class="feed split container" id="services">
+            <div class="feed__card flow">
+                <i class="fas fa-hammer icon feed__card-icon"></i>
+                <h2 class="feed__card-heading fs-600">Nybygg</h2>
+                <p class="feed__card-info fs-500">Kjøpt deg ny tomt? Drømmer du om nytt hus? Vi kan hjelpe deg med oppføringen av den nye drømmeboligen din. Er det andre bygninger du trenger hjelp med?
+                    Vi står klare til å oppføre både hus og andre bygninger. Vi leverer våre prosjekter til riktig tid, pris og etter dine ønsker.</p>
+            </div>
+            <div class="feed__card flow">
+                <i class="fas fa-house-damage icon feed__card-icon"></i>
+                <h2 class="feed__card-heading fs-600">Restaurering</h2>
+                <p class="feed__card-info fs-500">
+                    Har du en eiendom du ønsker og restaurere? Vi kommer gjerne og foretar en befaring. Under befaringen vil vi hjelpe deg med å finne ut hva som må gjøres for og sette det i stand i forhold til gjeldene forskrifter
+                </p>
+            </div>
+            <div class="feed__card flow">
+                <i class="fas fa-hard-hat icon feed__card-icon"></i>
+                <h2 class="feed__card-heading fs-600">Tilbygg</h2>
+                <p class="feed__card-info fs-500">
+                    Ønsker du deg et større hus, eller rett og slett mer plass? Da kan et tilbygg på din nåværende bolig være løsningen.
+                    Vi hjelper deg igjennom hele prosessen fra idé til ferdig oppført tilbygg. Vi har lang erfaring fra bransjen, og vi vil passe på at prosjektet blir utført etter gjeldene forskrifter. </p>
+            </div>
+        </section>
+        <section class="contact container" id="contact">
+            <div class="contact__container split">
+                <div class="contact__container-info center">
+                    <h2>Kontakt info</h2>
+                    <div class="info split">
+                        <div class="info-left">
+                            <ul class="info__ul">
+                                <li class="info__ul-li"><i class="fas fa-mobile icon"></i><a href="tel:+4798422893">+47-98422893</a></li>
+                                <li class="info__ul-li"><i class="fas fa-envelope icon"></i><a href="mailto: enoksenbygg@gmail.com" class="resetlink"> enoksenbygg@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="info-right">
+                            <ul class="info__ul">
+                                <li class="info__ul-li"><i class="fas fa-address-card icon"></i>Org-nr: 1249761249769</li>
+                                <li class="info__ul-li"><i class="fas fa-map-marker icon"></i> vestlandsstykket, 4950 risør</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=vestlandsstykket&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </section>
+        <nav class="footer__navigation">
+            <ul class="footer__navigation-ul split uppercase">
+                <li class="footer__navigation-li"><a href="#about" class="resetlink">om oss</a></li>
+                <li class="footer__navigation-li"><a href="#services" class="resetlink">tjenester</a></li>
+                <li class="footer__navigation-li"><a href="#contact" class="resetlink">Kontakt</a></li>
+            </ul>
+        </nav>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

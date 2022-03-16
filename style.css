@@ -1,0 +1,412 @@
+/* RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* UTilitY */
+.flow > * + * {
+  margin-top: 3rem;
+}
+
+.spacer {
+  margin-top: 3rem;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem;
+  min-height: 40rem;
+}
+
+.underline {
+  width: 100%;
+  border-bottom: 5px solid #398a8a;
+  margin-bottom: 2rem;
+}
+
+.resetlink {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.split {
+    display: flex;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* font related */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-300 {
+  font-size: 0.6rem;
+}
+
+.fs-400 {
+  font-size: 1rem;
+}
+.fs-500 {
+  font-size: 1.2rem;
+}
+.fs-600 {
+  font-size: 1.2rem;
+}
+.fs-700 {
+  font-size: 1.5rem;
+}
+.fs-800 {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 55rem) {
+  .fs-300 {
+    font-size: 0.8rem;
+  }
+  
+  .fs-400 {
+    font-size: 1rem;
+  }
+  .fs-500 {
+    font-size: 1.2rem;
+  }
+  .fs-600 {
+    font-size: 1.4rem;
+  }
+  .fs-700 {
+    font-size: 1.5rem;
+  }
+  .fs-800 {
+    font-size: 2.2rem;
+  }
+}
+/* GLOBAL */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-image: linear-gradient(black, black),url("./wood.jpeg");
+    background-blend-mode: saturation;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+}
+
+a 
+{
+  text-decoration: none;
+  color: #fffeff;
+}
+
+/* Components */
+
+/* header */
+
+/* MOBILE navigation */
+
+.footer__navigation {
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+}
+
+.footer__navigation-ul {
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 0.3rem;
+}
+
+
+
+/*desktop navigation */
+.logo {
+  width: 13rem;
+}
+
+.primary__navigation {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.primary__navigation-ul-desktop {
+  display: none;
+  list-style: none;
+  justify-content: space-evenly;
+  flex-grow: 0.5;
+  position: relative;
+}
+
+.primary__navigation-li {
+  cursor: pointer;
+}
+
+@media (min-width: 55rem) {
+  .primary__navigation-ul-desktop {
+    display: flex;
+  }
+  .footer__navigation {
+    display: none;
+  }
+}
+
+/****/
+
+/* services section */
+.services {
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services__pitch {
+  max-width: 50ch;
+  text-align: start;
+}
+
+.services__contact {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #398a8a;
+  box-shadow: 0 0 40px black;
+  font-size: 1rem;
+}
+
+.services__contact-btn {
+  color: white;
+}
+
+/* services MEDIA */
+@media (min-width: 55rem) {
+  .services {
+    flex-direction: row;
+  }
+
+  .services__contact {
+    padding: 2rem;
+    box-shadow: 0 0 40px black;
+    font-size: 1.3rem;
+  }
+}
+/* ABOUT Section */
+.about__list {
+  text-align: start;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.about__list-li {
+  margin-top: 0.7rem;
+}
+
+.icon {
+  color: #ffffff;
+  margin-right: 1rem;
+}
+
+.about__list-li {
+  font-weight: 600;
+  list-style: none;
+}
+
+/* angled div */
+.about {
+  background: #398a8a;
+  text-align: center;
+}
+
+
+/* about info */
+
+.about__flex {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.about__flex-info {
+  max-width: 40ch;
+}
+
+@media (min-width: 55rem) {
+  .about__flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .about__flex-info {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* FACEBOOK Oembed CARD */
+.feed {
+  min-height: 50rem;
+  margin-bottom: 10rem;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem
+}
+
+@media (min-width: 60rem) {
+  .feed {
+    flex-direction: row;
+  }
+}
+
+.feed__card {
+  position: relative;
+  text-align: center;
+  max-width: 25rem;
+  color: #fffeff;
+  padding: 2rem;
+  background: #398a8a;
+  border-radius: 5px;
+}
+
+.feed__card-icon {
+  color: #fffeff;
+  font-size: 3rem;
+}
+
+/* feed card frosted glass effect */
+
+/* CONTACT */
+
+.contact {
+  background-color: #398a8a;
+}
+
+.contact__container {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+iframe {
+  max-width: 35rem;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 30rem) {
+  iframe {
+    height: 22rem;
+  }
+}
+
+.info {
+  flex-direction: column;
+}
+
+.info__ul {
+  margin-top: 3rem;
+  list-style-type: none;
+}
+
+.info__ul-li {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 60rem) {
+  .contact__container {
+    flex-direction: row;
+  }
+}
+
+/* <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=vestlandsstykket&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div> */
